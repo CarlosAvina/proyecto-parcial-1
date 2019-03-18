@@ -20,10 +20,139 @@
       </div>
       <div class="row">
         <div class="col-6">
+          <!--SLIDER-->
           <div class="slidecontainer">
             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
           </div>
-          <canvas width="1000" height="1000" id="canvasId"></canvas>
+
+          <!--CANVAS-->
+          <div style="max-height: 1000px;max-width:1000px;overflow: scroll;">
+              <canvas width="1500" height="1500" id="canvasId"></canvas>
+          </div>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Edificios()">Edificios</button><br>
+            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Resetear()">Facultades</button><br>
+            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Resetear()">Areas de entretenimiento</button><br>
+            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Resetear()">Aulas de uso común</button><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Edificio</th>
+                <th scope="col">Niveles</th>
+                <th scope="col">Facultades</th>
+                <th scope="col"># salones/nivel</th>
+                <th scope="col">Aulas de uso común</th>
+                <th scope="col">Áreas de entretenimiento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Edificio I</td>
+                <td>2</td>
+                <td>Tecnologías de la Información</td>
+                <td>27</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Edificio J</td>
+                <td>4</td>
+                <td>Arquitectura</td>
+                <td>22</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Edificio G</td>
+                <td>4</td>
+                <td>Derecho</td>
+                <td>42</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Edificio H</td>
+                <td>2</td>
+                <td></td>
+                <td>31</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Edificio E</td>
+                <td>4</td>
+                <td></td>
+                <td>17</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Edificio D</td>
+                <td>3</td>
+                <td>Odontología</td>
+                <td>10</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Edificio C</td>
+                <td>3</td>
+                <td>Comunicación y Mercadotecnia</td>
+                <td>17</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Edificio M</td>
+                <td>3</td>
+                <td>Diseño</td>
+                <td>22</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Edificio P</td>
+                <td>4</td>
+                <td>Negocios</td>
+                <td>36</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Edificio Q</td>
+                <td>3</td>
+                <td></td>
+                <td>1</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Edificio F</td>
+                <td>3</td>
+                <td></td>
+                <td>0</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
