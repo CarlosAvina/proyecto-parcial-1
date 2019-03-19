@@ -10,6 +10,7 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
+var io = require('./server.js');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
@@ -19,6 +20,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+io.attach(server);
 console.log("El servidor WEB y servidor SOCKET.IO corrientdo correctamente en el puerto: " + port);
 /**
  * Listen on provided port, on all network interfaces.

@@ -1,3 +1,5 @@
+var socket = io('http://localhost:3000'); //Aqui va la ip del servidor
+
 var canvas;
 var canvasContext;
 
@@ -18,6 +20,11 @@ window.onload = function(){
     });
 }
 
+function Edificios(){
+    socket.emit('action', "hola");
+    console.log('Edificios');
+}
+
 function calculatePaddlePosition(evt){
     var rect = canvas.getBoundingClientRect();
     var root = document.documentElement;
@@ -33,28 +40,6 @@ function calculatePaddlePosition(evt){
 function createRectangle(x, y, width, height, color){
     canvasContext.fillStyle = color;
     canvasContext.fillRect(x, y, width, height);
-}
-
-var Edificios = function(){
-    readTextFile("file:///Users/juancarlosavinaluna/Documents/ISSC/Semestre\ 6/Sistemas\ Georeferenciados/proyecto-parcial-1/public/files/universum.dat");
-}
-
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
-        }
-    }
-    rawFile.send(null);
 }
 
 function graficar(){
@@ -88,14 +73,3 @@ slider.oninput = function() {
     createRectangle(0, 0, canvas.width, canvas.height, 'ghostwhite');
     graficar();
 }
-
-/*
-if((i + 1) % 2 == 1) {
-                canvasContext.beginPath();
-                canvasContext.moveTo(x, y);
-            } else {
-                canvasContext.lineTo(x, y);
-                canvasContext.strokeStyle = 'red';
-                canvasContext.stroke();
-            }
-*/
