@@ -26,15 +26,15 @@
           </div>
 
           <!--CANVAS-->
-          <div style="max-height: 1000px;max-width:1000px;overflow: scroll;">
+          <!-- <div style="max-height: 1000px;max-width:1000px;overflow: scroll;"> -->
               <canvas width="1500" height="1500" id="canvasId"></canvas>
-          </div>
+          <!-- </div> -->
         </div>
         <div class="col-6">
             <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Edificios()">Edificios</button><br>
-            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Resetear()">Facultades</button><br>
-            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Resetear()">Areas de entretenimiento</button><br>
-            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Resetear()">Aulas de uso común</button><br>
+            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="Facultades()">Facultades</button><br>
+            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="aulas()">Aulas de uso común</button><br>
+            <button type="button" class="btn btn-secondary" id="btnResetear" onclick="entretenimiento()">Areas de entretenimiento</button><br>
         </div>
       </div>
       <div class="row">
@@ -165,6 +165,7 @@
 
     <script src="./javascripts/socket.io.js" type="text/javascript"></script>
     <script src="./javascripts/client.js" type="text/javascript"></script>
+    <script src="./javascripts/filtros.js" type="text/javascript"></script>
     
   </body>
 </html>
